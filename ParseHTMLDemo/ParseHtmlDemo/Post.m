@@ -9,7 +9,7 @@
 #import "Post.h"
 #import <Ono.h>
 
-static NSString *const kUrlStr=@"http://BigPi.me";
+static NSString *const kUrlStr=@"http://iShawn.wang";
 
 @implementation Post
 +(NSArray*)getNewPosts{
