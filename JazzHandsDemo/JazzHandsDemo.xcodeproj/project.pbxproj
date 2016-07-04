@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03310D280783D53D04AA3688 /* libPods-JazzHandsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8640B74CFB509F7E8705BF5 /* libPods-JazzHandsDemo.a */; };
+		0E7E53411C7CC26100E3C7B6 /* DemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E53401C7CC26100E3C7B6 /* DemoListViewController.m */; };
+		0E932FF61C7C17CD00871CAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E932FF51C7C17CD00871CAC /* main.m */; };
+		0E932FF91C7C17CD00871CAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E932FF81C7C17CD00871CAC /* AppDelegate.m */; };
+		0E932FFC1C7C17CD00871CAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E932FFB1C7C17CD00871CAC /* ViewController.m */; };
+		0E932FFF1C7C17CD00871CAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E932FFD1C7C17CD00871CAC /* Main.storyboard */; };
+		0E9330011C7C17CD00871CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E9330001C7C17CD00871CAC /* Assets.xcassets */; };
+		0E9330041C7C17CD00871CAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9330021C7C17CD00871CAC /* LaunchScreen.storyboard */; };
+		0E93300F1C7C17CD00871CAC /* JazzHandsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E93300E1C7C17CD00871CAC /* JazzHandsDemoTests.m */; };
+		0E9330731C7C263700871CAC /* UIView+PiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9330701C7C263700871CAC /* UIView+PiAdditions.m */; };
+		0E9330761C7C3A2E00871CAC /* TalkIntroDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9330751C7C3A2E00871CAC /* TalkIntroDemo.m */; };
+		0E93307C1C7C4DE100871CAC /* TalkIntroFull.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E93307B1C7C4DE100871CAC /* TalkIntroFull.m */; };
+		0EEA60D51C7E089A005DBD5B /* IFTTTCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA60D41C7E089A005DBD5B /* IFTTTCircleView.m */; };
+		0EEA60D81C7E22A2005DBD5B /* JazzHandsKeepViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA60D71C7E22A2005DBD5B /* JazzHandsKeepViewDemo.m */; };
+		0EEA60DC1C7E2AEE005DBD5B /* JazzHandsPageViewControllerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA60DB1C7E2AEE005DBD5B /* JazzHandsPageViewControllerDemo.m */; };
+		0EEA60E01C7E2EC2005DBD5B /* JazzHandsScrollControllerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA60DF1C7E2EC2005DBD5B /* JazzHandsScrollControllerDemo.m */; };
+		0EEA60E41C7E3E7E005DBD5B /* JazzHandsTextMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA60E31C7E3E7E005DBD5B /* JazzHandsTextMoveViewController.m */; };
+		0EED6BE51C7EDA13003200B9 /* BackgroundColorDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EED6BE41C7EDA13003200B9 /* BackgroundColorDemo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E93300B1C7C17CD00871CAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E932FE91C7C17CD00871CAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E932FF01C7C17CD00871CAC;
+			remoteInfo = JazzHandsDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E7E533F1C7CC26100E3C7B6 /* DemoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoListViewController.h; sourceTree = "<group>"; };
+		0E7E53401C7CC26100E3C7B6 /* DemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoListViewController.m; sourceTree = "<group>"; };
+		0E932FF11C7C17CD00871CAC /* JazzHandsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JazzHandsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E932FF51C7C17CD00871CAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E932FF71C7C17CD00871CAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0E932FF81C7C17CD00871CAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0E932FFA1C7C17CD00871CAC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0E932FFB1C7C17CD00871CAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0E932FFE1C7C17CD00871CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E9330001C7C17CD00871CAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E9330031C7C17CD00871CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E9330051C7C17CD00871CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E93300A1C7C17CD00871CAC /* JazzHandsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JazzHandsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E93300E1C7C17CD00871CAC /* JazzHandsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JazzHandsDemoTests.m; sourceTree = "<group>"; };
+		0E9330101C7C17CD00871CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E9330701C7C263700871CAC /* UIView+PiAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PiAdditions.m"; sourceTree = "<group>"; };
+		0E9330721C7C263700871CAC /* UIView+PiAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PiAdditions.h"; sourceTree = "<group>"; };
+		0E9330741C7C3A2E00871CAC /* TalkIntroDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkIntroDemo.h; sourceTree = "<group>"; };
+		0E9330751C7C3A2E00871CAC /* TalkIntroDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalkIntroDemo.m; sourceTree = "<group>"; };
+		0E93307A1C7C4DE100871CAC /* TalkIntroFull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkIntroFull.h; sourceTree = "<group>"; };
+		0E93307B1C7C4DE100871CAC /* TalkIntroFull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalkIntroFull.m; sourceTree = "<group>"; };
+		0EEA60D31C7E089A005DBD5B /* IFTTTCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTCircleView.h; sourceTree = "<group>"; };
+		0EEA60D41C7E089A005DBD5B /* IFTTTCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTCircleView.m; sourceTree = "<group>"; };
+		0EEA60D61C7E22A2005DBD5B /* JazzHandsKeepViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JazzHandsKeepViewDemo.h; sourceTree = "<group>"; };
+		0EEA60D71C7E22A2005DBD5B /* JazzHandsKeepViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JazzHandsKeepViewDemo.m; sourceTree = "<group>"; };
+		0EEA60DA1C7E2AEE005DBD5B /* JazzHandsPageViewControllerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JazzHandsPageViewControllerDemo.h; sourceTree = "<group>"; };
+		0EEA60DB1C7E2AEE005DBD5B /* JazzHandsPageViewControllerDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JazzHandsPageViewControllerDemo.m; sourceTree = "<group>"; };
+		0EEA60DE1C7E2EC2005DBD5B /* JazzHandsScrollControllerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JazzHandsScrollControllerDemo.h; sourceTree = "<group>"; };
+		0EEA60DF1C7E2EC2005DBD5B /* JazzHandsScrollControllerDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JazzHandsScrollControllerDemo.m; sourceTree = "<group>"; };
+		0EEA60E21C7E3E7E005DBD5B /* JazzHandsTextMoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JazzHandsTextMoveViewController.h; sourceTree = "<group>"; };
+		0EEA60E31C7E3E7E005DBD5B /* JazzHandsTextMoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JazzHandsTextMoveViewController.m; sourceTree = "<group>"; };
+		0EED6BE31C7EDA13003200B9 /* BackgroundColorDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundColorDemo.h; sourceTree = "<group>"; };
+		0EED6BE41C7EDA13003200B9 /* BackgroundColorDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundColorDemo.m; sourceTree = "<group>"; };
+		B1C54BDBDFD0F87B4FC5D8BF /* Pods-JazzHandsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JazzHandsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JazzHandsDemo/Pods-JazzHandsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B8640B74CFB509F7E8705BF5 /* libPods-JazzHandsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JazzHandsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE523B821C136C9E934580DA /* Pods-JazzHandsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JazzHandsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JazzHandsDemo/Pods-JazzHandsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E932FEE1C7C17CD00871CAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03310D280783D53D04AA3688 /* libPods-JazzHandsDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E9330071C7C17CD00871CAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E932FE81C7C17CD00871CAC = {
+			isa = PBXGroup;
+			children = (
+				0E932FF31C7C17CD00871CAC /* JazzHandsDemo */,
+				0E93300D1C7C17CD00871CAC /* JazzHandsDemoTests */,
+				0E932FF21C7C17CD00871CAC /* Products */,
+				45D813F61B7E369460F66F87 /* Pods */,
+				57ACB4C3630974531755BD74 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0E932FF21C7C17CD00871CAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E932FF11C7C17CD00871CAC /* JazzHandsDemo.app */,
+				0E93300A1C7C17CD00871CAC /* JazzHandsDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E932FF31C7C17CD00871CAC /* JazzHandsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0E932FF71C7C17CD00871CAC /* AppDelegate.h */,
+				0E932FF81C7C17CD00871CAC /* AppDelegate.m */,
+				0E7E533F1C7CC26100E3C7B6 /* DemoListViewController.h */,
+				0E7E53401C7CC26100E3C7B6 /* DemoListViewController.m */,
+				0E932FFD1C7C17CD00871CAC /* Main.storyboard */,
+				0E9330781C7C4DA900871CAC /* Util */,
+				0E9330771C7C4D9A00871CAC /* 基本 */,
+				0E9330791C7C4DB300871CAC /* TalkIntro 球 */,
+				0E93307D1C7C4DE500871CAC /* TalkIntro 完整 */,
+				0EEA60E11C7E3000005DBD5B /* IFTTTAnimatedScrollViewDemo */,
+				0EEA60DD1C7E2B13005DBD5B /* IFTTTAnimatedPagingScrollViewDemo */,
+				0EEA60D91C7E22BE005DBD5B /* JazzHandsKeepViewDemo */,
+				0EEA60E51C7E3EF5005DBD5B /* JazzHandsTextMoveViewController */,
+				0EED6BE61C7EDA16003200B9 /* BackgroundColorDemo */,
+				0E932FF41C7C17CD00871CAC /* Supporting Files */,
+			);
+			path = JazzHandsDemo;
+			sourceTree = "<group>";
+		};
+		0E932FF41C7C17CD00871CAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E9330001C7C17CD00871CAC /* Assets.xcassets */,
+				0E9330021C7C17CD00871CAC /* LaunchScreen.storyboard */,
+				0E9330051C7C17CD00871CAC /* Info.plist */,
+				0E932FF51C7C17CD00871CAC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E93300D1C7C17CD00871CAC /* JazzHandsDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E93300E1C7C17CD00871CAC /* JazzHandsDemoTests.m */,
+				0E9330101C7C17CD00871CAC /* Info.plist */,
+			);
+			path = JazzHandsDemoTests;
+			sourceTree = "<group>";
+		};
+		0E9330771C7C4D9A00871CAC /* 基本 */ = {
+			isa = PBXGroup;
+			children = (
+				0E932FFA1C7C17CD00871CAC /* ViewController.h */,
+				0E932FFB1C7C17CD00871CAC /* ViewController.m */,
+			);
+			name = "基本";
+			sourceTree = "<group>";
+		};
+		0E9330781C7C4DA900871CAC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0E9330701C7C263700871CAC /* UIView+PiAdditions.m */,
+				0E9330721C7C263700871CAC /* UIView+PiAdditions.h */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		0E9330791C7C4DB300871CAC /* TalkIntro 球 */ = {
+			isa = PBXGroup;
+			children = (
+				0E9330741C7C3A2E00871CAC /* TalkIntroDemo.h */,
+				0E9330751C7C3A2E00871CAC /* TalkIntroDemo.m */,
+			);
+			name = "TalkIntro 球";
+			sourceTree = "<group>";
+		};
+		0E93307D1C7C4DE500871CAC /* TalkIntro 完整 */ = {
+			isa = PBXGroup;
+			children = (
+				0E93307A1C7C4DE100871CAC /* TalkIntroFull.h */,
+				0E93307B1C7C4DE100871CAC /* TalkIntroFull.m */,
+			);
+			name = "TalkIntro 完整";
+			sourceTree = "<group>";
+		};
+		0EEA60D91C7E22BE005DBD5B /* JazzHandsKeepViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0EEA60D31C7E089A005DBD5B /* IFTTTCircleView.h */,
+				0EEA60D41C7E089A005DBD5B /* IFTTTCircleView.m */,
+				0EEA60D61C7E22A2005DBD5B /* JazzHandsKeepViewDemo.h */,
+				0EEA60D71C7E22A2005DBD5B /* JazzHandsKeepViewDemo.m */,
+			);
+			name = JazzHandsKeepViewDemo;
+			sourceTree = "<group>";
+		};
+		0EEA60DD1C7E2B13005DBD5B /* IFTTTAnimatedPagingScrollViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0EEA60DA1C7E2AEE005DBD5B /* JazzHandsPageViewControllerDemo.h */,
+				0EEA60DB1C7E2AEE005DBD5B /* JazzHandsPageViewControllerDemo.m */,
+			);
+			name = IFTTTAnimatedPagingScrollViewDemo;
+			sourceTree = "<group>";
+		};
+		0EEA60E11C7E3000005DBD5B /* IFTTTAnimatedScrollViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0EEA60DE1C7E2EC2005DBD5B /* JazzHandsScrollControllerDemo.h */,
+				0EEA60DF1C7E2EC2005DBD5B /* JazzHandsScrollControllerDemo.m */,
+			);
+			name = IFTTTAnimatedScrollViewDemo;
+			sourceTree = "<group>";
+		};
+		0EEA60E51C7E3EF5005DBD5B /* JazzHandsTextMoveViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0EEA60E21C7E3E7E005DBD5B /* JazzHandsTextMoveViewController.h */,
+				0EEA60E31C7E3E7E005DBD5B /* JazzHandsTextMoveViewController.m */,
+			);
+			name = JazzHandsTextMoveViewController;
+			sourceTree = "<group>";
+		};
+		0EED6BE61C7EDA16003200B9 /* BackgroundColorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0EED6BE31C7EDA13003200B9 /* BackgroundColorDemo.h */,
+				0EED6BE41C7EDA13003200B9 /* BackgroundColorDemo.m */,
+			);
+			name = BackgroundColorDemo;
+			sourceTree = "<group>";
+		};
+		45D813F61B7E369460F66F87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE523B821C136C9E934580DA /* Pods-JazzHandsDemo.debug.xcconfig */,
+				B1C54BDBDFD0F87B4FC5D8BF /* Pods-JazzHandsDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		57ACB4C3630974531755BD74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8640B74CFB509F7E8705BF5 /* libPods-JazzHandsDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E932FF01C7C17CD00871CAC /* JazzHandsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E9330131C7C17CD00871CAC /* Build configuration list for PBXNativeTarget "JazzHandsDemo" */;
+			buildPhases = (
+				1BE91D98DBB1BA62C31977C6 /* Check Pods Manifest.lock */,
+				0E932FED1C7C17CD00871CAC /* Sources */,
+				0E932FEE1C7C17CD00871CAC /* Frameworks */,
+				0E932FEF1C7C17CD00871CAC /* Resources */,
+				BEDC65A5B0F5D6CCE03B5361 /* Embed Pods Frameworks */,
+				2AA83D0F6F318AF2E9F24BBD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JazzHandsDemo;
+			productName = JazzHandsDemo;
+			productReference = 0E932FF11C7C17CD00871CAC /* JazzHandsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E9330091C7C17CD00871CAC /* JazzHandsDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E9330161C7C17CD00871CAC /* Build configuration list for PBXNativeTarget "JazzHandsDemoTests" */;
+			buildPhases = (
+				0E9330061C7C17CD00871CAC /* Sources */,
+				0E9330071C7C17CD00871CAC /* Frameworks */,
+				0E9330081C7C17CD00871CAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E93300C1C7C17CD00871CAC /* PBXTargetDependency */,
+			);
+			name = JazzHandsDemoTests;
+			productName = JazzHandsDemoTests;
+			productReference = 0E93300A1C7C17CD00871CAC /* JazzHandsDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E932FE91C7C17CD00871CAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = pi;
+				TargetAttributes = {
+					0E932FF01C7C17CD00871CAC = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = NK43D9F8MS;
+					};
+					0E9330091C7C17CD00871CAC = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = NK43D9F8MS;
+						TestTargetID = 0E932FF01C7C17CD00871CAC;
+					};
+				};
+			};
+			buildConfigurationList = 0E932FEC1C7C17CD00871CAC /* Build configuration list for PBXProject "JazzHandsDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E932FE81C7C17CD00871CAC;
+			productRefGroup = 0E932FF21C7C17CD00871CAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E932FF01C7C17CD00871CAC /* JazzHandsDemo */,
+				0E9330091C7C17CD00871CAC /* JazzHandsDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E932FEF1C7C17CD00871CAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9330041C7C17CD00871CAC /* LaunchScreen.storyboard in Resources */,
+				0E9330011C7C17CD00871CAC /* Assets.xcassets in Resources */,
+				0E932FFF1C7C17CD00871CAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E9330081C7C17CD00871CAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BE91D98DBB1BA62C31977C6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2AA83D0F6F318AF2E9F24BBD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JazzHandsDemo/Pods-JazzHandsDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEDC65A5B0F5D6CCE03B5361 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JazzHandsDemo/Pods-JazzHandsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E932FED1C7C17CD00871CAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9330761C7C3A2E00871CAC /* TalkIntroDemo.m in Sources */,
+				0E9330731C7C263700871CAC /* UIView+PiAdditions.m in Sources */,
+				0EEA60DC1C7E2AEE005DBD5B /* JazzHandsPageViewControllerDemo.m in Sources */,
+				0EEA60D81C7E22A2005DBD5B /* JazzHandsKeepViewDemo.m in Sources */,
+				0EEA60E41C7E3E7E005DBD5B /* JazzHandsTextMoveViewController.m in Sources */,
+				0E932FFC1C7C17CD00871CAC /* ViewController.m in Sources */,
+				0E93307C1C7C4DE100871CAC /* TalkIntroFull.m in Sources */,
+				0EEA60E01C7E2EC2005DBD5B /* JazzHandsScrollControllerDemo.m in Sources */,
+				0E932FF91C7C17CD00871CAC /* AppDelegate.m in Sources */,
+				0E7E53411C7CC26100E3C7B6 /* DemoListViewController.m in Sources */,
+				0EEA60D51C7E089A005DBD5B /* IFTTTCircleView.m in Sources */,
+				0EED6BE51C7EDA13003200B9 /* BackgroundColorDemo.m in Sources */,
+				0E932FF61C7C17CD00871CAC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E9330061C7C17CD00871CAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E93300F1C7C17CD00871CAC /* JazzHandsDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E93300C1C7C17CD00871CAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E932FF01C7C17CD00871CAC /* JazzHandsDemo */;
+			targetProxy = 0E93300B1C7C17CD00871CAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E932FFD1C7C17CD00871CAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E932FFE1C7C17CD00871CAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E9330021C7C17CD00871CAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E9330031C7C17CD00871CAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E9330111C7C17CD00871CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E9330121C7C17CD00871CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E9330141C7C17CD00871CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE523B821C136C9E934580DA /* Pods-JazzHandsDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JazzHandsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BigPi.JazzHandsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0E9330151C7C17CD00871CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1C54BDBDFD0F87B4FC5D8BF /* Pods-JazzHandsDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JazzHandsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BigPi.JazzHandsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0E9330171C7C17CD00871CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JazzHandsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BigPi.JazzHandsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JazzHandsDemo.app/JazzHandsDemo";
+			};
+			name = Debug;
+		};
+		0E9330181C7C17CD00871CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JazzHandsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BigPi.JazzHandsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JazzHandsDemo.app/JazzHandsDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E932FEC1C7C17CD00871CAC /* Build configuration list for PBXProject "JazzHandsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E9330111C7C17CD00871CAC /* Debug */,
+				0E9330121C7C17CD00871CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E9330131C7C17CD00871CAC /* Build configuration list for PBXNativeTarget "JazzHandsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E9330141C7C17CD00871CAC /* Debug */,
+				0E9330151C7C17CD00871CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E9330161C7C17CD00871CAC /* Build configuration list for PBXNativeTarget "JazzHandsDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E9330171C7C17CD00871CAC /* Debug */,
+				0E9330181C7C17CD00871CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E932FE91C7C17CD00871CAC /* Project object */;
+}

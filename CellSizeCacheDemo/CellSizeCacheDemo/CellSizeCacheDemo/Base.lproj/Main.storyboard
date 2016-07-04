@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ocA-fX-1O8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="sEN-Ju-J7e">
+            <objects>
+                <tableViewController id="ocA-fX-1O8" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="137" sectionHeaderHeight="28" sectionFooterHeight="28" id="zCe-Dz-w2t">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="137" id="2nQ-f1-eA0" customClass="Cell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="137"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2nQ-f1-eA0" id="lD0-dy-5vg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="136"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" autorepeat="NO" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wbv-bC-gUT">
+                                            <rect key="frame" x="253" y="99" width="94" height="29"/>
+                                            <connections>
+                                                <action selector="stepperValueChanged:" destination="2nQ-f1-eA0" eventType="valueChanged" id="aQr-xW-LNg"/>
+                                            </connections>
+                                        </stepper>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Yq-JE-hwu">
+                                            <rect key="frame" x="8" y="16" width="75" height="75"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="75" id="TPb-R2-PqR"/>
+                                                <constraint firstAttribute="width" constant="75" id="zIB-9e-9BS"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="儿子满周岁，请双方父母亲戚吃饭。席间逗儿子：宝贝，会叫什么？儿子叫：爸爸…妈妈！还会什么？儿子又叫：老公。大伙乐了，继续逗，儿子蹦出一句：老公，用力……然后，都碉堡了！" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5u-V9-YYl">
+                                            <rect key="frame" x="91" y="16" width="501" height="75"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4Yq-JE-hwu" firstAttribute="top" secondItem="lD0-dy-5vg" secondAttribute="topMargin" constant="8" id="4FB-Z8-lCf"/>
+                                        <constraint firstItem="wbv-bC-gUT" firstAttribute="centerX" secondItem="lD0-dy-5vg" secondAttribute="centerX" id="4Ww-vK-DnK"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="a5u-V9-YYl" secondAttribute="trailing" id="A8I-5F-4kp"/>
+                                        <constraint firstItem="a5u-V9-YYl" firstAttribute="top" secondItem="lD0-dy-5vg" secondAttribute="topMargin" constant="8" id="GAz-rI-PlM"/>
+                                        <constraint firstItem="4Yq-JE-hwu" firstAttribute="centerY" secondItem="lD0-dy-5vg" secondAttribute="centerY" id="Jgm-ZQ-9sf"/>
+                                        <constraint firstItem="4Yq-JE-hwu" firstAttribute="top" secondItem="a5u-V9-YYl" secondAttribute="top" id="Kkx-Fy-gnG"/>
+                                        <constraint firstItem="a5u-V9-YYl" firstAttribute="leading" secondItem="4Yq-JE-hwu" secondAttribute="trailing" constant="8" id="Oj8-6S-xkl"/>
+                                        <constraint firstItem="4Yq-JE-hwu" firstAttribute="centerY" secondItem="a5u-V9-YYl" secondAttribute="centerY" id="RfK-eW-I0Z"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="4Yq-JE-hwu" secondAttribute="leading" id="dAV-9N-xNb"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="wbv-bC-gUT" secondAttribute="bottom" id="fuB-7s-arz"/>
+                                        <constraint firstItem="wbv-bC-gUT" firstAttribute="top" secondItem="a5u-V9-YYl" secondAttribute="bottom" constant="8" id="xnR-sg-wwE"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="4FB-Z8-lCf"/>
+                                            <exclude reference="Jgm-ZQ-9sf"/>
+                                            <exclude reference="Kkx-Fy-gnG"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="demoImageView" destination="4Yq-JE-hwu" id="zzU-fE-YGM"/>
+                                    <outlet property="demoLabel" destination="a5u-V9-YYl" id="mQN-bz-qnZ"/>
+                                    <outlet property="demoStepper" destination="wbv-bC-gUT" id="UXE-u1-KQU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ocA-fX-1O8" id="oJj-5e-ip7"/>
+                            <outlet property="delegate" destination="ocA-fX-1O8" id="0Jx-gh-yYj"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nJ-Gn-oZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="481"/>
+        </scene>
+    </scenes>
+</document>

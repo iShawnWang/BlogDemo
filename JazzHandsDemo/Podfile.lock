@@ -1,0 +1,13 @@
+PODS:
+  - JazzHands (2.0.8)
+  - Masonry (0.6.4)
+
+DEPENDENCIES:
+  - JazzHands
+  - Masonry
+
+SPEC CHECKSUMS:
+  JazzHands: 355dc5c2b6fc38ee460d0ed7836c69539263f477
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+
+COCOAPODS: 0.39.0
