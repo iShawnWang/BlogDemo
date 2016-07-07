@@ -31,16 +31,15 @@ const CGSize NilCacheSize ={-1,-1};
     return _cacheLandscape;
 }
 
--(void)setOrientationSize:(CGSize)size forModel:(id)model{
+-(void)setOrientationSize:(CGSize)size forModel:(id<ModelSizeCacheProtocol>)model{
     if(UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation)){
-        [self.cacheLandscape setObject:[NSValue valueWithCGSize:size] forKey:@([model hash])];
+        [self.cacheLandscape setObject:[NSValue valueWithCGSize:size] forKey:[model modelID]];
     }else{
-        
-        [self.cachePortrait setObject:[NSValue valueWithCGSize:size] forKey:@([model hash])];
+        [self.cachePortrait setObject:[NSValue valueWithCGSize:size] forKey:[model modelID]];
     }
 }
 
--(NSValue*)sizeByOrientationForKey:(id)key{
+-(NSValue*)sizeByOrientationForKey:(NSString*)key{
     if(UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation)){
         return [self.cacheLandscape objectForKey:key];
     }else{
@@ -48,7 +47,7 @@ const CGSize NilCacheSize ={-1,-1};
     }
 }
 
--(CGSize)getSizeForModel:(id)model withCollectionView:(UICollectionView *)collectionView orCalc:(CalcModelSizeBlock)block{
+-(CGSize)getSizeForModel:(id<ModelSizeCacheProtocol>)model withCollectionView:(UICollectionView *)collectionView orCalc:(CalcModelSizeBlock)block{
     //先从缓存中取
     CGSize modelSize= [self getCacheSizeForModel:model];
     //没有就计算一下
@@ -62,7 +61,7 @@ const CGSize NilCacheSize ={-1,-1};
     return modelSize;
 }
 
--(CGFloat)getHeightForModel:(id)model withTableView:(UITableView *)tableView orCalc:(CalcModelHeightBlock)block{
+-(CGFloat)getHeightForModel:(id<ModelSizeCacheProtocol>)model withTableView:(UITableView *)tableView orCalc:(CalcModelHeightBlock)block{
     //先从缓存中取
     CGSize modelSize= [self getCacheSizeForModel:model];
     //没有就计算一下
@@ -76,10 +75,10 @@ const CGSize NilCacheSize ={-1,-1};
     return modelSize.height;
 }
 
--(CGSize)getCacheSizeForModel:(id)model{
+-(CGSize)getCacheSizeForModel:(id<ModelSizeCacheProtocol>)model{
     CGSize cacheSize=NilCacheSize;
     //从缓存中读取 size
-    NSValue *cacheSizeValue=[self sizeByOrientationForKey:@([model hash])];
+    NSValue *cacheSizeValue=[self sizeByOrientationForKey:[model modelID]];
     if(cacheSizeValue){
         NSLog(@"从缓存中读取行高 :%@",cacheSizeValue);
         cacheSize= cacheSizeValue.CGSizeValue;
@@ -88,14 +87,14 @@ const CGSize NilCacheSize ={-1,-1};
 }
 
 -(void)invalidateCacheForModels:(NSArray*)models{
-    [models enumerateObjectsUsingBlock:^(id  _Nonnull model, NSUInteger idx, BOOL * _Nonnull stop) {
+    [models enumerateObjectsUsingBlock:^(id<ModelSizeCacheProtocol>  _Nonnull model, NSUInteger idx, BOOL * _Nonnull stop) {
         [self invalidateCacheForModel:model];
     }];
 }
 
--(void)invalidateCacheForModel:(id)model{
-    [self.cachePortrait removeObjectForKey:@([model hash])];
-    [self.cacheLandscape removeObjectForKey:@([model hash])];
+-(void)invalidateCacheForModel:(id<ModelSizeCacheProtocol>)model{
+    [self.cachePortrait removeObjectForKey:[model modelID]];
+    [self.cacheLandscape removeObjectForKey:[model modelID]];
 }
 
 -(void)clearCache{

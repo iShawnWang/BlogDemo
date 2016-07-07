@@ -13,6 +13,7 @@
     Joke *joke= [Joke new];
     joke.content=content;
     joke.repeatCount=1;
+    joke.objectID=[[NSProcessInfo processInfo] globallyUniqueString];
     joke.imageName=[NSString stringWithFormat:@"images%@",@([Joke randomInt:7])]; //随机图片
     return joke;
 }
@@ -32,6 +33,11 @@
     return jokes;
 }
 
+#pragma mark - ModelSizeCacheProtocol
+-(NSString *)modelID{
+    return self.objectID;
+}
+
 /**
  *
  *
@@ -39,9 +45,5 @@
  */
 +(NSUInteger)randomInt:(NSUInteger)toInt{
     return arc4random_uniform((u_int32_t)toInt)+1;
-}
-
--(NSUInteger)hash{ 
-    return [super hash] ^ [self.content hash] ^ [self.imageName hash] ^ [@(self.repeatCount) hash];
 }
 @end

@@ -64,6 +64,7 @@ NSString *const kCellID = @"Cell";
     NSIndexPath *indexPath= [self.tableView indexPathForCell:cell];
     Joke *joke= self.jokes[indexPath.row];
     joke.repeatCount=value;
+    [self.modelSizeCache invalidateCacheForModel:joke];
     [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
 }
 
